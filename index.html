@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase test</title>
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <h1>Firebase HTML test</h1>
+    <div id="not-logged-in">
+        <h3>Login</h3>
+        <form onsubmit="login(event)">
+            <input type="text" id="email" placeholder="email">
+            <input type="password" id="password" placeholder="password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="logged-in">
+        <h3>Logged in.</h3>
+        <button onclick="logout()">Logout</button>
+        <button onclick="saveChanges()">Save changes</button>
+    </div>
+
+
+    <main>
+        <h4 id="title" class="change">a</h4>
+        <p id="text" class="change" style="background-color: red; width: 100px; height: 10px;">b</p>
+        <p id="text2" class="change">c</p>
+    </main>
+
+
+    <form onsubmit="testFunction(event)">
+        <input type="text" id="testInput">
+        <button id="testButton" type="submit">Test</button>
+    </form>
+    <p id="testText">TestText</p>
+
+</body>
+</html>
